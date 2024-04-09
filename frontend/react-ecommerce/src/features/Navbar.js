@@ -1,4 +1,4 @@
-import { children, Fragment } from "react";
+import {  Fragment } from "react";
 import { Disclosure, Menu, Transition } from "@headlessui/react";
 import {
   Bars3Icon,
@@ -26,7 +26,7 @@ function classNames(...classes) {
   return classes.filter(Boolean).join(" ");
 }
 const Navbar = ({ children }) => {
-  console.log(children);
+
   return (
     <div>
       <div className="min-h-full">
