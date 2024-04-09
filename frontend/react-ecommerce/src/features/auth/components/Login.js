@@ -47,12 +47,12 @@ function Login() {
                     Password
                   </label>
                   <div className="text-sm">
-                    <link
+                    <Link
                       to="/"
                       className="font-semibold text-indigo-600 hover:text-indigo-500"
                     >
                       Forgot password?
-                    </link>
+                    </Link>
                   </div>
                 </div>
                 <div className="mt-2">
@@ -80,7 +80,7 @@ function Login() {
             <p className="mt-10 text-center text-sm text-gray-500">
               Create Account ?{" "}
               <Link
-                to="/"
+                to="/signup"
                 className="font-semibold leading-6 text-indigo-600 hover:text-indigo-500"
               >
                 SIGN UP
@@ -90,7 +90,7 @@ function Login() {
         </div>
       </div>
     </>
-  )
+  );
 }
 
 export default Login;

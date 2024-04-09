@@ -2,6 +2,7 @@ import React from "react";
 import "./App.css";
 import Home from "./pages/Home";
 import LoginPage from "./pages/LoginPage";
+
 import {
   createBrowserRouter,
   RouterProvider,
@@ -9,6 +10,11 @@ import {
   Link,
 } from "react-router-dom";
 import SignupPage from "./pages/SignupPage";
+
+import CartPage from "./pages/CartPage";
+import Checkout from "./pages/Checkout";
+import ProductDetailPage from "./pages/ProductDetailPage";
+
 const router = createBrowserRouter([
   {
     path: "/",
@@ -27,6 +33,30 @@ const router = createBrowserRouter([
     element: (
       <div>
         <SignupPage />
+      </div>
+    ),
+  },
+  {
+    path: "/cart",
+    element: (
+      <div>
+        <CartPage />
+      </div>
+    ),
+  },
+  {
+    path: "/checkout",
+    element: (
+      <div>
+        <Checkout />
+      </div>
+    ),
+  },
+  {
+    path: "/product-detail",
+    element: (
+      <div>
+        <ProductDetailPage />
       </div>
     ),
   },
